@@ -1,2 +1,2 @@
 # to-do
-To do list with Angular JS
+A simple To do list made with Angular JS.

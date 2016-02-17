@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.date {
+  margin-left: 15px;
+  color: grey;
+  font-size: 13px;
+}
+.container {
+  min-height: 400px;
+  width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border-radius: 1rem;
+  border: 0.5rem solid white;
+  background: #16a085;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.65);
+  padding-bottom: 30px;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  font-size: 0.625rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: #ecf0f1;
+}
+
+header {
+  padding: 1.5rem 1rem;
+  background: white;
+}
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #34495e;
+}
+
+.input-container {
+  position: relative;
+  overflow: auto;
+  padding: 2rem;
+}
+
+[name="appCtr.newTodo"] {
+  float: left;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: #16a085;
+}
+
+.add-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+.add-icon:after {
+  content: '+';
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 3px auto;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 35px;
+  background: white;
+  color: #16a085;
+  cursor: pointer;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: white;
+}
+input::-webkit-input-placeholder{
+  color: #16a085;
+  font-family: 'roboto';
+  font-weight: 300;
+}
+input::-moz-input-placeholder{
+  color: #16a085;
+  font-family: 'roboto';
+  font-weight: 300;
+}
+.list {
+  margin: 0;
+  padding: 0 2rem 2rem;
+  list-style-type: none;
+  clear: both;
+  font-size: 1.4rem;
+}
+
+.date {
+  float: right;
+  color: lightgrey;
+  padding: 5px;
+  line-height: 16px;
+}
+.clear {
+  background-color: #fff;
+  color: #000;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding-top: 15px;
+}
+[ng-cloak] {
+  visibility: hidden;
+}

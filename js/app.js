@@ -51,7 +51,7 @@
                 vm.todos = getItem('todosArray');
                 vm.todos.push({
                   title: vm.newTodo,
-                  datetime: Date().toISOString(),
+                  datetime: new Date().toISOString(),
                   done: false
                 });
                 vm.newTodo = '';
